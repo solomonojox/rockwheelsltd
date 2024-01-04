@@ -1,0 +1,165 @@
+body{
+  background-color: var(--color-bgs);
+}
+.intro-header{
+  width: 100%;
+  height: 90vh;;
+  background: rgba(0,0,0,0.5) url(/images/about-header.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header h1{
+  font-size: 10vmin;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.overview{
+  text-align: justify;
+  margin: 20px 100px;
+}
+
+.values-container{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 50px 5%;
+  background-color: #dbdbdb;
+}
+
+.values-container .heading{
+  text-align: center;
+  color: var(--color-primary);
+}
+.values-container h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our-values{
+  gap: 50px;
+  display: flex;
+}
+
+.head-data{
+  display: flex;
+  margin-bottom: 10px;
+}
+.head-data img{
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.core-values{
+  min-width: 500px;
+}
+.div-l, .div-i, .div-f, .div-e{
+  max-width: 942px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-bottom: 6px solid var(--color-primary);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.div-l:hover, .div-i:hover, .div-f:hover, .div-e:hover{
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.div-l h3, .div-i h3, .div-f h3, .div-e h3{
+  color: var(--color-primary);
+}
+
+.founded{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.founded .founded-image{
+  width: 600px;
+  height: 400px;
+  background-image: url(/images/img8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.founded .founded-info{
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  width: 600px;
+  height: 400px;
+  color: var(--color-white);
+  gap: 10px;
+}
+
+.ceo-quote{
+  margin: 50px 150px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 8px solid var(--color-primary);
+  background-color: var(--color-white);
+}
+.ceo-quote img{
+  width: 200px;
+  height: auto;
+}
+.ceo-quote p{
+  font-style: italic;
+}
+
+/* Responsive */
+@media(min-width:1200px){
+  .founded .founded-image, .founded .founded-info{
+    width: 50%;
+  }
+  .founded{
+    width: 100%;
+  }
+}
+@media(min-width:1179px){
+  .core-values{
+    max-width: 942px;
+    min-width: 700px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 38px;
+  }
+}
+@media(max-width:1179px){
+  .div-l, .div-i, .div-f, .div-e{
+    width: 100%;
+  }
+}
+
+@media(max-width: 992px){
+  .our-values{
+    flex-direction: column;
+  }
+  .core-values{
+    min-width: 100%;
+  }
+  .founded {
+    flex-direction: column;
+    width: 100%;
+  }
+  .founded .founded-image, .founded .founded-info{
+    width: 100%;
+  }
+}
+@media(max-width: 768px){
+  .ceo-quote{
+    margin: 50px 40px;
+    padding: 20px;
+  }
+  .ceo-quote img{
+    display: none;
+  }
+}

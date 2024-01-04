@@ -1,0 +1,143 @@
+.intro-header{
+  width: 100%;
+  height: 80vh;
+  background: rgba(0,0,0,0.5) url(/images/contract.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header h1{
+  font-size: 10vmin;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.pm-service-head{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-secondary);
+}
+.pm-service-head h1, .pm-service-head p{
+  color: var(--color-white);
+}
+
+.pm-service-head img{
+  width: 50%;
+}
+
+.service-intro{
+  padding: 20px 2% 50px;
+  text-align: center;
+}
+
+.btn{
+  background-color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.heading{
+  text-align: center;
+}
+
+/* Service block */
+.services-block{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20% 50px;
+}
+
+.divide-line{
+  width: 1.2px;
+  background-color: var(--color-dark-grey);
+}
+
+.div-1 p, .div-2 p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 40px;
+}
+.div-1 p i, .div-2 p i{
+  color: var(--color-success);
+  font-size: 20px;
+}
+
+/* PDCA */
+.pdca{
+  padding: 5%;
+  background-color: var(--color-secondary);
+}
+.pdca h1{
+  text-align: center;
+  color: var(--color-primary);
+}
+.pdca-p{
+  text-align: center;
+  margin: 10px 0 50px;
+}
+
+.pdca-detail-container{
+  display: flex;
+  gap: 15%;
+  margin: 0 10%;
+}
+.pdca-details-div{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pdca-details{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pdca-details i{
+  font-size: 40px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .intro-header{
+    height: 60vh;
+  }
+  .fm-services-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .service-intro h1{
+    font-size: 16px;
+  }
+
+  .pm-service-head img{
+    display: none;
+  }
+
+  .services-block{
+    flex-direction: column;
+    margin: 0 20px 50px;
+  }
+
+  .divide-line{
+    display: none;
+  }
+}

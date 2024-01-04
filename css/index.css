@@ -1,0 +1,261 @@
+body{
+  background-color: var(--color-white);
+}
+
+/* Home section */
+.intro-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: auto;
+}
+.intro-video .video{
+  width: 100%;
+}
+
+.content{
+  position: absolute;
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+}
+.content h1{
+  font-size: 8vmax;
+  text-shadow: 1px 1px 1px black;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 3vmax;
+  margin: 0 5%;
+}
+
+.intro-grid{
+  width: 100%;
+}
+.grid-1-2{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.grid-3-4{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.grid-1, .grid-2, .grid-3, .grid-4{
+  width: 600px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-1{
+  background-image: url(/images/img1.jpg);
+}
+
+.grid-2, .grid-3{
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-info{
+  padding: 50px 80px;
+  color: var(--color-white);
+}
+
+.grid-2 h1, .grid-3 h1{
+  line-height: 35px;
+  margin: 10px 0;
+}
+.grid-info button{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.grid-info a{
+  text-decoration: none;
+  width: 150px;
+}
+
+.grid-4{
+  background-image: url(/images/img4.jpg);
+}
+
+
+.about-grid{
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  margin: 20px 0;
+  gap: 10px;
+}
+/* Grid 1 & 4 */
+.a-grid-1, .a-grid-4{
+  min-width: 600px;
+  height: 200px;
+  background-color: #ffccfc;
+}
+
+.a-grid-1 i, .a-grid-4 i{
+  color: #1576ff;
+}
+
+.a-grid-1:hover, .a-grid-4:hover{
+  background-color: #1576ff;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+/* Grid 2 & 3 */
+.a-grid-2, .a-grid-3{
+  min-width: 600px;
+  height: 200px;
+  background-color: #f9fdd3;
+}
+
+.a-grid-2 i, .a-grid-3 i{
+  color: #adc400;
+}
+
+.a-grid-2:hover, .a-grid-3:hover{
+  background-color: #adc400;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+/* h3 color on hover */
+.a-grid-1:hover h3, .a-grid-2:hover h3, .a-grid-3:hover h3, .a-grid-4:hover h3 {
+  color: var(--color-black);
+}
+
+/* icon color on hover */
+.a-grid-1:hover i, .a-grid-2:hover i, .a-grid-3:hover i, .a-grid-4:hover i{
+  color: var(--color-white);
+  transition: 0.3s;
+}
+
+/* grid content */
+.a-grid-1, .a-grid-2, .a-grid-3, .a-grid-4{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.about-grid p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-grid h3{
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+/* Core values */
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 20px 40px;
+  border: none;
+  display: flex;
+  font-size: 25px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Core values */
+.head-data-info{
+  gap: 10px;
+}
+.head-data i{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.head-data img{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+/* responsive */
+@media(max-width: 400px){
+  .content p{
+    font-size: 12px !important;
+  }
+}
+@media(max-width: 600px){
+  .content h1{
+    font-size: 3vmax !important;
+  }
+  .content p{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 992px){
+  .content h1{
+    font-size: 4vmax;
+    margin-top: 25%;
+  }
+
+  .grid-1-2 {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .grid-3-4 {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .a-grid-1, .a-grid-2, .a-grid-3, .a-grid-4{
+    min-width: 50%;
+  }
+
+}
+
+@media(max-width: 1199px){
+  .a-grid-1, .a-grid-2, .a-grid-3, .a-grid-4{
+    width: 100%;
+  }
+
+  .about-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-1, .grid-2, .grid-3, .grid-4{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media(min-width:1200px){
+  .grid-1-2, .grid-3-4{
+    width: 100%;
+  }
+
+  .grid-1, .grid-2, .grid-3, .grid-4{
+    width: 50%;
+  }
+
+  .intro-grid{
+    width: 100%;
+  }
+}
