@@ -118,6 +118,9 @@
   .intro-header{
     height: 60vh;
   }
+  .pm-service-head{
+    padding: 20px;
+  }
   .fm-services-list{
     display: flex;
     flex-direction: column;

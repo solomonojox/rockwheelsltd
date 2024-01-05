@@ -252,9 +252,9 @@ a{
 @media(max-width: 991px){
   .header .nav-menu{
     position: fixed;
-    right: -380px;
+    right: -280px;
     visibility: hidden;
-    width: 350px;
+    width: 280px;
     height: 100%;
     top: 0;
     overflow-y: auto;

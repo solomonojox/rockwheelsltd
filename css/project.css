@@ -33,8 +33,11 @@
 }
 
 .service-intro{
-  padding: 20px 2% 50px;
+  padding: 20px 5% 50px;
   text-align: center;
+}
+.service-intro p{
+  text-align: justify;
 }
 
 .btn{
@@ -115,6 +118,9 @@
 
 /* Responsive */
 @media(max-width: 768px){
+  .pm-service-head{
+    padding: 20px;
+  }
   .intro-header{
     height: 60vh;
   }
@@ -128,6 +134,7 @@
     font-size: 16px;
   }
 
+
   .pm-service-head img{
     display: none;
   }
@@ -139,5 +146,14 @@
 
   .divide-line{
     display: none;
+  }
+
+  /* PDCA */
+  .pdca{
+
+  }
+  .pdca-detail-container{
+    flex-direction: column;
+    margin: 0;
   }
 }
