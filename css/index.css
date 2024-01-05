@@ -1,3 +1,9 @@
+/* site under construction */
+.under-construction{
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-bgs);
+}
 /* Home section */
 .intro-video{
   display: flex;
@@ -219,10 +225,10 @@
 }
 @media(max-width: 600px){
   .content h1{
-    font-size: 6vmax !important;
+    font-size: 5vmax !important;
   }
   .content p{
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 
