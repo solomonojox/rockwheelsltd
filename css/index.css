@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 .intro-video .video{
-  /* width: 100%; */
+  width: 100%;
   position: relative;
   right: 0;
   bottom: 0;
@@ -197,7 +197,7 @@
 /* responsive */
 
 /* Video aspect ratio */
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16.1/9){
   .intro-video .video{
     width: 100%;
     height: auto;
