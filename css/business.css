@@ -72,6 +72,7 @@
 
 .head-data{
   display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 .head-data-img{
@@ -81,6 +82,9 @@
 
 /* Responsive */
 @media(max-width: 768px){
+  .bc-services-head{
+    padding: 20px;
+  }
   .bc-services-list{
     display: flex;
     flex-direction: column;

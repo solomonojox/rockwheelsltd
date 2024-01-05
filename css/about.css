@@ -140,6 +140,9 @@ body{
 }
 
 @media(max-width: 992px){
+  .overview{
+    margin: 20px;
+  }
   .our-values{
     flex-direction: column;
   }
@@ -153,10 +156,13 @@ body{
   .founded .founded-image, .founded .founded-info{
     width: 100%;
   }
+  .founded .founded-info{
+    padding: 40px;
+  }
 }
 @media(max-width: 768px){
   .ceo-quote{
-    margin: 50px 40px;
+    margin: 50px 20px;
     padding: 20px;
   }
   .ceo-quote img{

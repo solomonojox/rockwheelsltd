@@ -69,6 +69,9 @@ body{
 
 /* Responsive */
 @media(max-width: 768px){
+  .fm-services-head{
+    padding: 20px;
+  }
   .fm-services-list{
     display: flex;
     flex-direction: column;

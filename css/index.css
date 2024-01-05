@@ -147,7 +147,7 @@ body{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
 }
 .about-grid p{
   font-size: 20px;
@@ -229,6 +229,16 @@ body{
     min-width: 50%;
   }
 
+  .grid-info{
+    padding: 20px;
+  }
+  .grid-info h1{
+    font-size: 7vmin;
+  }
+
+  .about-grid p{
+    font-size: 15px;
+  }
 }
 
 @media(max-width: 1199px){
