@@ -82,7 +82,7 @@ body{
 .founded .founded-image{
   width: 600px;
   height: 400px;
-  background-image: url(/images/img8.jpg);
+  background-image: url(../images/img8.jpg);
   background-position: center;
   background-size: cover;
 }
