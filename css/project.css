@@ -149,11 +149,9 @@
   }
 
   /* PDCA */
-  .pdca{
-
-  }
   .pdca-detail-container{
     flex-direction: column;
     margin: 0;
+    gap: 30px;
   }
 }
