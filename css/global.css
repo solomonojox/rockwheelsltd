@@ -43,3 +43,24 @@ body{
   --color-light: #f8f9fa;
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
+/* Goto top */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  display: none;
+
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10%;
+  opacity: 80%;
+}
+
+#myBtn i{
+  font-size: 20px;
+  color: var(--color-primary);
+}
