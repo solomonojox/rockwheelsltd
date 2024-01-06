@@ -1,0 +1,10 @@
+.message{
+  height: 100vh;
+  background-color: var(--color-bgs);
+}
+.message p{
+  font-size: 3vmin;
+  font-style: italic;
+  padding: 120px 40px;
+  font-size: 18px;
+}
