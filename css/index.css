@@ -66,8 +66,7 @@
   color: var(--color-white);
 }
 
-.grid-2 h1, .grid-3 h1{
-  /* font-size: 3vmin; */
+.grid-2 h2, .grid-3 h2{
   margin: 10px 0;
 }
 .grid-info button{
@@ -88,7 +87,6 @@
 .grid-4{
   background-image: url(../images/img4.jpg);
 }
-
 
 .about-grid{
   display: grid;
@@ -212,7 +210,7 @@
 }
 /* end video */
 
-@media(max-width: 400px){
+@media(max-width: 430px){
   .content p{
     font-size: 12px !important;
   }
@@ -243,19 +241,12 @@
     gap: 20px;
   }
 
-  .grid-2 h1, .grid-3 h1{
-    font-size: 4vmin !important;
-  }
-
   .a-grid-1, .a-grid-2, .a-grid-3, .a-grid-4{
     min-width: 50%;
   }
 
   .grid-info{
     padding: 20px;
-  }
-  .grid-info h1{
-    font-size: 7vmin;
   }
 
   .about-grid p{
