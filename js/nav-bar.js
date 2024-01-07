@@ -79,9 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinksElements = document.querySelectorAll('.nav_links');
   const activePage = window.location.pathname;
   
+  // navLinksElements.forEach(navLinksElements => {
+  //   if (navLinksElements.href.includes(`${activePage}`)) {
+  //     navLinksElements.classList.add('nav_active');
+  //   }
+  // });
+
   navLinksElements.forEach(navLinksElements => {
-    if (navLinksElements.href.includes(`${activePage}`)) {
+    const navlinkPathname = new URL(navLinksElements.href).pathname;
+
+    if ((activePage === navlinkPathname) || (activePage === '/index.html' && navlinkPathname === '/')) {
       navLinksElements.classList.add('nav_active');
     }
-  });
+  })
 })
