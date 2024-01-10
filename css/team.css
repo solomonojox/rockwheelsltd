@@ -68,9 +68,10 @@ body{
   height: 100px;
   border-bottom: 10px solid var(--color-primary);
   padding: 20px;
+  
 }
 .details h2{
-  font-size: 3.5vmin;
+  font-size: 20px;
 }
 
 /* Responsive */

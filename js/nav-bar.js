@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
     header.classList.toggle("sticky", window.scrollY > 0);
   });
   
-  // active page style 1
+  // active page style
+  // document.getElementById('home').classList.add('nav_active');
+
   const navLinksElements = document.querySelectorAll('.nav_links');
   const activePage = window.location.pathname;
   
