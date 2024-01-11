@@ -1,6 +1,3 @@
-body{
-  background-color: #ebe3e3;
-}
 .intro-header{
   width: 100%;
   height: 90vh;;
@@ -18,48 +15,52 @@ body{
   color: var(--color-white);
   text-align: center;
 }
-
+.big-card-container{
+  display: flex;
+}
 .team-container{
   display: flex;
   align-items: center;
-  margin: 50px 0;
-}
-
- .card-container{
-  display: flex;
-  flex-direction: left;
+  justify-content: center;
   flex-wrap: wrap;
   float: left;
-  justify-content: center;
-  margin: 100px 0px;
+  margin: 100px 0;
+}
+
+ .card-wrapper{
+  height: auto;
+  width: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
  
-.team-card{
+/* Card front */
+.card-front{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  width: 354px;
+  width: 250px;
 }
 
-.team-card:hover{
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+.card-wrapper:hover{
   transform: translate(0px, -2px);
   transition: all 0.3s ease;
 }
 
-.team-card-img{
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
+.card-front-img{
+  width: 250px;
+  height: 250px;
 }
 
-.team-card-img img{
+.card-front-img img{
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.details{
+.card-details{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,8 +71,31 @@ body{
   padding: 20px;
   
 }
-.details h2{
+.card-details h2{
   font-size: 20px;
+}
+
+/* Card back */
+.card-back{
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+  background-color: aquamarine;
+  backface-visibility: hidden;
+}
+
+/* Flip card */
+.flipcard{
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
+}
+.card-wrapper.flipped .flipcard {
+  transform: rotateY(180deg);
 }
 
 /* Responsive */
@@ -79,24 +103,28 @@ body{
   .team-container{
     margin: 20px 0;
   }
-  .card-container{
-    margin: auto;
-  }
-  .team-card{
+
+  .card-wrapper{
     width: 100%;
   }
-  .team-card-img{
-    width: 100%;
-    height: 320px;
-  }
-  .team-card-img img{
+
+  .card-front, .card-back{
     width: 100%;
     height: 100%;
   }
-  .details{
+
+  .card-front-img{
     width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
   }
-  .details h2{
-    font-size: 4.5vmin;
+  .card-front-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-details{
+    width: 100%;
   }
 }
