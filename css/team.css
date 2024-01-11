@@ -95,7 +95,7 @@
 .card-back p{
   color: var(--color-white);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
 }
 .card-back span{
   font-weight: bold;
