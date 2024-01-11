@@ -84,8 +84,22 @@
   width: 250px;
   height: 350px;
   padding: 10px;
-  background-color: aquamarine;
+  background-color: var(--color-primary);
   backface-visibility: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid var(--color-secondary);
+}
+.card-back p{
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 20px;
+}
+.card-back span{
+  font-weight: bold;
+  color: var(--color-secondary);
 }
 
 /* Flip card */
