@@ -80,6 +80,10 @@
   width: 100%;
 }
 .footer-buttons button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   border: 1px solid #989696;
   width: 100%;
   background-color: transparent;
@@ -90,6 +94,15 @@
   padding: 0 20px;
   cursor: pointer;
 }
+.footer-buttons button i{
+  font-size: 20px;
+}
+
+.footer-buttons button:hover i{
+  transform: rotate(-90deg);
+  transition: all 0.4s ease;
+}
+
 .footer-buttons button:hover{
   background-color: rgba(255, 255, 255, 0.1);
 }
