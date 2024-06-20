@@ -38,6 +38,11 @@
   font-size: 25px;
   margin-bottom: 15px;
 }
+.follow-links a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 #copyright{
   display: flex;
@@ -48,6 +53,10 @@
   border-top: 1px solid #fff;
   padding-top: 20px;
   width: 100%;
+}
+#copyright a{
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 
 /* footer-nav-links */
@@ -123,6 +132,10 @@
   padding: 20px;
   font-size: 12px;
   background-color: #1c1b1b;
+}
+#copyright-2 a{
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 
 /* Responsive */
