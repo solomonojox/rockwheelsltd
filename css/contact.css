@@ -16,7 +16,9 @@
   color: var(--color-primary);
   left: 100px;
 }
-
+p{
+  line-height: 1.5;
+}
 .address-form{
   display: flex;
   gap: 40px;

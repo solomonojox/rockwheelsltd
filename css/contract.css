@@ -15,7 +15,9 @@
   color: var(--color-white);
   text-align: center;
 }
-
+p{
+  line-height: 1.5;
+}
 .pm-service-head{
   display: flex;
   align-items: center;

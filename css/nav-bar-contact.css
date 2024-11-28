@@ -47,7 +47,7 @@ a{
 .header .menu > .menu-item a{
   display: block;
   padding: 8px 8px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-black);
   text-transform: capitalize;
   font-weight: 600;
@@ -123,8 +123,8 @@ a{
 }
 .header .menu > .menu-item > .sub-menu > .menu-item > a{
   display: block;
-  padding: 1px 20px;
-  font-size: 16px;
+  padding: 5px 20px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--color-black);
   transition: all 0.3s ease;

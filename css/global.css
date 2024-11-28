@@ -20,6 +20,8 @@ html{
 }
 body p{
   font-size: 14px;
+  line-height: 1.2;
+  color: rgb(44, 44, 44);
 }
 
 /* Animation overflow */
